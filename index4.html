@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Caution Tape Vex V5 Push Back Skills Score Calculator</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+<center>
+	<br>
+	<br>
+	<img src="CautionTapeLogo.png" alt="">
+	<h1>Vex V5 Push Back Skills Score Calculator</h1>
+	<br>
+	<br>
+	<span># of Blocks Scored: </span><input id="sBS" type="number" value="0" min="0" max="88">
+	<br>
+	<br>
+	<span># of Long Goal Control Zones: </span>
+	<select id="sLGCZ">
+		<option value="0">None</option>
+		<option value="1">One</option>
+		<option value="2">Two</option>
+	</select>
+	<br>
+	<br>
+	<span>Upper Center Goal: </span>
+	<select id="sUCG">
+		<option value="0">No</option>
+		<option value="1">Yes</option>
+	</select>
+	<br>
+	<br>
+	<span>Lower Center Goal: </span>
+	<select id="sLCG">
+		<option value="0">No</option>
+		<option value="1">Yes</option>
+	</select>
+	<br>
+	<br>
+	<span># of Park Zones Cleared: </span>
+	<select id="pZC">
+		<option value="0">None</option>
+		<option value="1">One</option>
+		<option value="2">Two</option>
+	</select>
+	<br>
+	<br>
+	<span># of Loaders Cleared: </span>
+	<select id="lC">
+		<option value="0">None</option>
+		<option value="1">One</option>
+		<option value="2">Two</option>
+		<option value="3">Three</option>
+		<option value="4">Four</option>
+	</select>
+	<br>
+	<br>
+	<span>Robot Parked: </span>
+	<select id="rP">
+		<option value="0">No</option>
+		<option value="1">Yes</option>
+	</select>
+	<br>
+	<br>
+	<h2 id="sS">Score: 0</h2>
+	<br>
+	<br>
+	<button class="btn btn-warning" id="scScore" onclick="scScore()">Calculate Score</button>
+	<br>
+	<br>	
+	<button class="btn btn-primary" id="scFields" onclick="scFields()">Clear Fields</button>
+	<br>
+	<br>
+	<button class="btn btn-info" id="tmTimer" onclick="tmTimer()">Teamwork Match Timer</button>
+	<button class="btn btn-info" id="smTimer" onclick="smTimer()">Skills Match Timer</button>
+	<button class="btn btn-info" id="smCalculator" onclick="tmCalculator()">Teamwork Match Score Calculator</button>
+</center>
+</body>
+<script src="script.js"></script>
+</html>

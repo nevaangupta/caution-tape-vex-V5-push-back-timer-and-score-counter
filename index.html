@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Caution Tape Vex V5 Push Back Teamwork Match Timer</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+<center>
+	<br>
+	<br>
+	<img src="CautionTapeLogo.png" alt="">
+	<h1>Vex V5 Push Back Teamwork Match Timer</h1>
+	<br>
+	<h1 id="tOfMatch">Normal Match</h1>
+	<br>
+	<h1 id="periodDisplay">Autonomous:</h1>
+	<h1 id="tTimerDisplay">00:15</h1>
+	<h2 id="pProtection"></h2>
+	<br>
+	<br>
+	<button class="btn btn-warning" id="aOnly" onclick="aOnly()">Autonomous Only</button>
+	<button class="btn btn-warning" id="tOnly" onclick="tOnly()">Teamwork Only</button>
+	<button class="btn btn-warning" id="tOnly" onclick="nMatch()">Normal Match</button>
+	<br>
+	<br>
+	<button class="btn btn-success" id="startT" onclick="startT()">Start Autonomous</button>
+	<button class="btn btn-danger" id="sRT" onclick="sRT()">Stop and Reset</button>
+	<br>
+	<br>
+	<br>
+	<button class="btn btn-info" id="smTimer" onclick="smTimer()">Skills Match Timer</button>
+	<button class="btn btn-info" id="tmCalculator" onclick="tmCalculator()">Teamwork Match Score Calculator</button>
+	<button class="btn btn-info" id="smCalculator" onclick="smCalculator()">Skills Match Score Calculator</button>
+	<br>
+	<br>
+</center>
+</body>
+<script src="script.js"></script>
+</html>

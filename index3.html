@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Caution Tape Vex V5 Push Back Teamwork Score Calculator</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+<center>
+	<br>
+	<br>
+	<img src="CautionTapeLogo.png" alt="">
+	<h1>Vex V5 Push Back Teamwork Score Calculator</h1>
+	<br>
+	<span>Autonomous Bonus: </span>
+	<select id="aB">
+		<option value="0">None</option>
+		<option value="1">Red</option>
+		<option value="2">Blue</option>
+		<option value="3">Both</option>
+	</select>
+	<br>
+	<br>
+</center>
+<div class="row"></div>
+	<div class="col-md-6 text-center">
+		<span># Red of Blocks Scored: </span><input id="rBS" type="number" value="0" min = "0" max = "44">
+		<br>
+		<br>
+		<span>Long Goal:</span>
+		<select id="lGO">
+			<option value="0">Neutral</option>
+			<option value="1">Red</option>
+			<option value="2">Blue</option>
+		</select>
+	</div>
+	<div class="col-md-6 text-center">
+		<span># Blue of Blocks Scored: </span><input id="bBS" type="number" value="0" min = "0" max = "44">
+		<br>
+		<br>
+		<span>Long Goal:</span>
+		<select id="lGT">
+			<option value="0">Neutral</option>
+			<option value="1">Red</option>
+			<option value="2">Blue</option>
+		</select>
+	</div>
+</div>
+<center>
+	<br>
+	<span>Upper Center Goal:</span>
+	<select id="uCG">
+		<option value="0">Neutral</option>
+		<option value="1">Red</option>
+		<option value="2">Blue</option>
+	</select>
+	<br>
+	<br>
+	<span>Lower Center Goal:</span>
+	<select id="lCG">
+		<option value="0">Neutral</option>
+		<option value="1">Red</option>
+		<option value="2">Blue</option>
+	</select>
+	<br>
+	<br>
+</center>
+<div class="row"></div>
+	<div class="col-md-6 text-center">
+		<span>Red Robot 1 Parked:</span>
+		<select id="rROP">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</select>
+		<br>
+		<br>
+		<span>Red Robot 2 Parked:</span>
+		<select id="rRTP">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</select>
+		<br>
+		<br>
+		<h2 id="rS">Red Alliance Score: 0</h2>
+	</div>
+	<div class="col-md-6 text-center">
+		<span>Blue Robot 1 Parked:</span>
+		<select id="bROP">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</select>
+		<br>
+		<br>
+		<span>Blue Robot 2 Parked:</span>
+		<select id="bRTP">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</select>
+		<br>
+		<br>
+		<h2 id="bS">Blue Alliance Score: 0</h2>
+	</div>
+</div>
+<center>
+	<h2 id="tW"></h2>
+	<br>
+	<br>
+	<button class="btn btn-warning" id="tcScore" onclick="tcScore()">Calculate Score</button>
+	<br>
+	<br>	
+	<button class="btn btn-primary" id="resetTF" onclick="tcFields()">Clear Fields</button>
+	<br>
+	<br>
+	<button class="btn btn-info" id="tmTimer" onclick="tmTimer()">Teamwork Match Timer</button>
+	<button class="btn btn-info" id="smTimer" onclick="smTimer()">Skills Match Timer</button>
+	<button class="btn btn-info" id="smCalculator" onclick="smCalculator()">Skills Match Score Calculator</button>
+</center>
+</body>
+<script src="script.js"></script>
+</html>
